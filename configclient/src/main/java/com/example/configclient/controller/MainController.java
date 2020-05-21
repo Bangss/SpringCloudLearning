@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 @RestController
 public class MainController {
-    @Value("{application.name}")
+    @Value("{name}")
     private String name;
 
-    @GetMapping("main")
+    @GetMapping("/getName")
     public String getName() {
         return  name;
     }
