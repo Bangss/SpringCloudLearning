@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 @RestController
 public class MainController {
-    @Value("{name}")
-    private String name;
+    @Value("${rabbitmq.username}")
+    private String username;
 
-    @GetMapping("/getName")
-    public String getName() {
-        return  name;
+    @GetMapping("/username")
+    public String getPort() {
+        return  username;
     }
 }

@@ -12,6 +12,7 @@ spring:
           default-label: master
           username: bangss
           password: 241735
+          force-pull: true
     bus:
        enabled: true
        trace:

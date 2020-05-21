@@ -12,7 +12,7 @@ spring:
     config:
       label: master
       profile: dev
-   #   uri: http://localhost:8888/
+      uri: http://localhost:8888/
       discovery:
         enabled: true
         service-id: config-server
